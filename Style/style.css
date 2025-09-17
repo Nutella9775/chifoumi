@@ -1,3 +1,104 @@
-body{
-    text-align: center;
+/* style.css — Chifoumi (version améliorée avec feedback coloré) */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f9fafb);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 1.9rem;
+  color: #1e293b;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.buttons button,
+#reset {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  min-width: 110px;
+}
+
+.buttons button:hover,
+#reset:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.buttons button:active,
+#reset:active {
+  transform: translateY(0);
+}
+
+#resultat {
+  min-height: 40px;
+  font-weight: bold;
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  color: #007bff;
+}
+
+/* Couleurs dynamiques pour le résultat */
+.result-victoire {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.result-defaite {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.result-nul {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+[aria-label="Compteurs"] p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+#reset {
+  margin-top: 14px;
+  background-color: #6c757d;
+}
+
+#reset:hover {
+  background-color: #5a6268;
 }
