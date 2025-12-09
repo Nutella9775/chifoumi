@@ -1,9 +1,7 @@
-/* style.css — Chifoumi (version améliorée avec feedback coloré) */
 
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #dbeafe, #f9fafb);
   color: #333;
   display: flex;
   align-items: center;
@@ -12,7 +10,7 @@ body {
 }
 
 main {
-  background: #fff;
+  background: #bf9c9c;
   padding: 28px;
   border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -40,7 +38,7 @@ section {
 
 .buttons button,
 #reset {
-  background-color: #007bff;
+  background-color: hsl(250, 74%, 30%);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -54,7 +52,7 @@ section {
 
 .buttons button:hover,
 #reset:hover {
-  background-color: #0056b3;
+  background-color: #1e293b;
   transform: translateY(-2px);
 }
 
@@ -70,19 +68,9 @@ section {
   padding: 10px;
   border-radius: 8px;
   background-color: #f1f5f9;
-  color: #007bff;
+  color: #1e293b;;
 }
 
-/* Couleurs dynamiques pour le résultat */
-.result-victoire {
-  background-color: #dcfce7;
-  color: #16a34a;
-}
-
-.result-defaite {
-  background-color: #fee2e2;
-  color: #dc2626;
-}
 
 .result-nul {
   background-color: #f3f4f6;
